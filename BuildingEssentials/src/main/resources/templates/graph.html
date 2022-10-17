@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <!-- google fonts here -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+<!-- fonts end here -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  
+  <title></title>
+  </head>
+  <body >
+      
+      <div class="w3-bar w3-white w3-card" >
+             <a href="/" class="w3-bar-item w3-button w3-wide" id="logo"> <i class='fas fa-home'></i> Building Essentials</a> 
+    <div class="right">
+     <a href="ordersByName"  class="w3-bar-item w3-button" id="custName"><i class='fas fa-portrait' ></i> Check Orders By CustomerName </a>   
+      
+     <a href="ordersByDate" class="w3-bar-item w3-button" id="dateName"><i class='fas fa-calendar-alt'></i> Find Orders By Date</a>
+       <a href="orders" class="w3-bar-item w3-button" id="orderdiv"> <i class='fas fa-cart-arrow-down'></i> Orders</a>    
+    </div>
+          
+      </div>
+      
+      <div id="chart-container">
+          <canvas id="mycanvas"  ></canvas>
+    </div>  
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> 
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script  src="js/home.js"></script>
+  
+  
+  </body>
+</html>

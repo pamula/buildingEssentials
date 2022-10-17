@@ -1,0 +1,152 @@
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <!-- google fonts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Sonsie+One&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+<!-- fonts end here -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+  <script type="module" src="js/maps.js"></script>
+   
+   <title></title>
+  </head>
+  <body>
+     <!--           show google maps here-->
+    
+      <div class="container" >    
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myPage">
+         <div class="w3-bar w3-white w3-card" >
+             <a href="/" class="w3-bar-item w3-button w3-wide" id="logo"> <i class='fas fa-home'></i> Building Essentials</a> 
+    <div class="right">
+     <a href="ordersByCustomer"  class="w3-bar-item w3-button" id="custName"><i class='fas fa-portrait' ></i> Check Orders By Customer-Name </a>   
+      
+     <a href="ordersByDate" class="w3-bar-item w3-button" id="dateName"><i class='fas fa-calendar-alt'></i> Find Orders By Date</a>
+       <a href="orders" class="w3-bar-item w3-button" id="orderdiv"> <i class='fas fa-cart-arrow-down'></i> Orders</a>    
+    <a href="graph" class="w3-bar-item w3-button" id="orderdiv"> <i class='fas fa-cart-arrow-down'></i>Check Which product Sell More</a>    
+   
+    
+    </div>
+          
+      </div>
+      
+<!--      <form th:action="@{/logout}" method="post">
+          <input type="submit" value="sign out"/></form>-->
+      <div class="conatiner">
+              <div class="row">
+                 
+      <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    
+  </ul>
+          
+       <div class=".col-sm-5 .col-md-6" id="items">       
+  <div class="carousel-inner" >
+    <div class="carousel-item active">
+      <img src="images/glass.jpg" alt="Glass" width="900" height="300">
+      <div class="carousel-caption">
+        <h3 style="color: white;font-family: 'Charm', cursive;">Choose From Number OF Variety Glass products</h3>
+       
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/wood.jpg" alt="Wood" width="900" height="300">
+      <div class="carousel-caption">
+        <h3 style="color: white;font-family: 'Charm', cursive;">We have different varieties of wood options!!!</h3>
+        
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/granite.jpg" alt="Granite" width="900" height="300">
+      <div class="carousel-caption">
+        <h3 style="color: black;font-family: 'Charm', cursive;">Granite is our favorite option here!!</h3>
+      </div>
+    </div>
+      <div class="carousel-item">
+      <img src="images/plastic.jpg" alt="Plastic" width="900" height="300">
+      <div class="carousel-caption">
+        <h3 style="color: black;font-family: 'Charm', cursive;">We have different varieties of plastic pipes!!!</h3>
+        
+      </div>   
+    </div>
+      
+      <div class="carousel-item">
+      <img src="images/windowFrames.jpg" alt="Window" width="900" height="300">
+      <div class="carousel-caption">
+        <h3 style="color:black;font-family: 'Charm', cursive;">We have different varieties of window frame options!!!</h3>
+        
+      </div>   
+    </div>
+  </div>
+           
+      
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+      
+   </div>
+                  <div class=".col-sm-5 " id="about">
+                      <h1> About</h1>
+                      <p>
+                          Building Essentials is one stop for your <br>constructions needs.<br>
+                          We offer best price in the city, with a speedy delivery services.<br>
+                          We have specialized associates who understand your needs <br>and help you choose the best product!!!<br>
+                         Come visit us and experience with high quality items. 
+                          
+                      </p>
+                      
+                  </div>   
+                 
+          </div>  
+      
+     </div>
+
+<!--       end of container div here   -->
+     <address> Come visit us at:40 Jersey Street<br>Boston, Massachusetts,USA</address> 
+  
+  </div>
+          
+      </div>
+     <div id="map"></div>
+    <div id="pano"></div>
+     
+    
+    <!-- End main body -->
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> 
+
+    <script defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkmowzYuBqLGeWYRpK4u5jyUSVW6yCmLg&callback=initialize">
+</script>
+<!--<script type="module" src="js/maps.js"></script>-->
+  </body>
+</html>
+

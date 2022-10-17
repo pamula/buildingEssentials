@@ -1,0 +1,109 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map,
+#pano {
+  float: left;
+  top: 60%;
+  height: 30%;
+  width: 50%;
+}
+
+
+* {box-sizing: border-box;}
+/*body {font-family: Verdana, sans-serif;*/
+/*      background-image: url('\\images/stoneBlock.jpg') ;*/
+body{
+      background-image: url('\\images/stoneBlock.jpg') ;
+	}
+        
+        #items{
+            position: fixed;
+            top: 10%;
+            left: 20px;
+            
+        }
+        
+        
+/*body, html {
+  height: 100%;
+  line-height: 1.8;
+}*/
+h3{
+    color: black;
+    font-family:'Charm', cursive;
+}
+
+#about{
+    position: fixed;
+    left:  65%;
+    color: black;
+    top:20%;
+    font-size: 20px;
+    font-family: 'Sonsie One', cursive;
+}
+   .right{
+    position: absolute;
+    right: 20px;
+   
+}
+#logo{
+    color:black;
+    font-size: 35px;
+       
+       font-family: 'Faster One', cursive;
+}
+#custName{
+   position: relative;
+    
+    right: 50px;
+   border: 1px solid black; 
+  padding: 5px ;
+  background-color: lightcyan;
+  color:brown;
+  width: 140px;
+  font-family: center;
+ 
+    
+}
+#dateName{
+position: relative;
+    right: 30px;
+border: 1px solid black; 
+  padding: 5px ;
+  background-color: lightcyan;
+  color:brown;
+}
+#orderdiv{
+    position: relative;
+    right: 20px;
+    border: 1px solid black;
+  padding: 5px ;
+  background-color: lightcyan;
+  color:brown;
+}
+#demo{
+   position: fixed;
+    left: 20%;
+    top:40%;
+}
+address{
+    position: fixed;
+    top:60%;
+    left: 5%;
+    display: block;
+    font-style: italic;
+   font-family: 'Sonsie One', cursive;
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+ 
